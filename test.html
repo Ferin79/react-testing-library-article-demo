@@ -1,0 +1,69 @@
+<table>
+  <thead>
+    <tr>
+      <th>Type of Query</th>
+      <th>0 Matches</th>
+      <th>1 Match</th>
+      <th>&gt;1 Matches</th>
+      <th align="center">Retry (Async/Await)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Single Element</strong></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td align="center"></td>
+    </tr>
+    <tr>
+      <td><code>getBy...</code></td>
+      <td>Throw error</td>
+      <td>Return element</td>
+      <td>Throw error</td>
+      <td align="center">No</td>
+    </tr>
+    <tr>
+      <td><code>queryBy...</code></td>
+      <td>Return <code>null</code></td>
+      <td>Return element</td>
+      <td>Throw error</td>
+      <td align="center">No</td>
+    </tr>
+    <tr>
+      <td><code>findBy...</code></td>
+      <td>Throw error</td>
+      <td>Return element</td>
+      <td>Throw error</td>
+      <td align="center">Yes</td>
+    </tr>
+    <tr>
+      <td><strong>Multiple Elements</strong></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td align="center"></td>
+    </tr>
+    <tr>
+      <td><code>getAllBy...</code></td>
+      <td>Throw error</td>
+      <td>Return array</td>
+      <td>Return array</td>
+      <td align="center">No</td>
+    </tr>
+    <tr>
+      <td><code>queryAllBy...</code></td>
+      <td>Return <code>[]</code></td>
+      <td>Return array</td>
+      <td>Return array</td>
+      <td align="center">No</td>
+    </tr>
+    <tr>
+      <td><code>findAllBy...</code></td>
+      <td>Throw error</td>
+      <td>Return array</td>
+      <td>Return array</td>
+      <td align="center">Yes</td>
+    </tr>
+  </tbody>
+</table>
